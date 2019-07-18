@@ -1,0 +1,16 @@
+.main-grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 64px auto;
+    height: 100%;
+
+    .outlet-container{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+        padding: 10px;
+    }
+    
+}
