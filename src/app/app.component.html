@@ -1,8 +1,25 @@
 <section class="main-grid-container mat-body">
-  <mat-toolbar color="primary">
-    <span>{{title}}</span>
-  </mat-toolbar>
-  <div class="outlet-container">
+  <div class="toolbar">
+      <mat-toolbar color="primary">
+          <a mat-button class="brand" routerLink=".">
+            {{title}}
+          </a>
+        </mat-toolbar>
+  </div>
+
+  <div class="navigation">
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Form Components
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-nav-list dense>
+              <a mat-list-item *ngFor="let item of navigationMenu" [routerLink]="item.link">{{item.label}} </a>
+           </mat-nav-list>
+        </mat-expansion-panel>
+  </div>
+  <div class="outlet-container">    
     <router-outlet></router-outlet>
   </div>
 </section>

@@ -1,4 +1,5 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 
 *{
     box-sizing: border-box;
@@ -11,4 +12,25 @@ body{
     margin: 0;
     padding: 0;
     border: 1px solid green;
+
+
 }
+
+.full-width-field{
+    width: 100%;
+}
+
+.field-wrapped{
+    padding: 5px;
+
+    .inner-margin{
+        margin: 4px 4px 4px 4px;
+    }
+}
+
+.functioning-sample{
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+
+

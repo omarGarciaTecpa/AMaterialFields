@@ -1,0 +1,61 @@
+<h1 class="mat-h1">Example Usage</h1>
+<div class="example-config mat-elevation-z2">
+        <div class="field-wrapped">
+                <mat-form-field class="full-width-field">
+                    <input matInput placeholder="Button Label" [(ngModel)]="label">
+                </mat-form-field>
+            </div>
+            
+            <div class="field-wrapped">
+                <mat-form-field class="full-width-field">
+                    <input matInput placeholder="Loading Label" [(ngModel)]="loadingLabel">
+                </mat-form-field>
+            </div>
+            
+            <div class="field-wrapped">
+                <h3>Color ot the button</h3>
+                <mat-radio-group [(ngModel)]="color">
+                    <mat-radio-button class="inner-margin" value="primary">
+                        Primary
+                    </mat-radio-button>
+                    <mat-radio-button class="inner-margin" value="accent">
+                        Accent
+                    </mat-radio-button>
+                    <mat-radio-button class="inner-margin" value="warn">
+                        Warn
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            
+            <div class="field-wrapped">
+                <h3>Color of the spinner</h3>
+                <mat-radio-group [(ngModel)]="spinnerColor">
+                    <mat-radio-button class="inner-margin" value="primary">
+                        Primary
+                    </mat-radio-button>
+                    <mat-radio-button class="inner-margin" value="accent">
+                        Accent
+                    </mat-radio-button>
+                    <mat-radio-button class="inner-margin" value="warn">
+                        Warn
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            
+            <div class="field-wrapped">
+                <mat-slide-toggle [color]="primary" [(ngModel)]="disabled">Disabled</mat-slide-toggle>
+            </div>
+            
+            <div class="field-wrapped">
+                <mat-slide-toggle [color]="primary" [(ngModel)]="loading">Loading</mat-slide-toggle>
+            </div>
+</div>
+
+
+<div class="functioning-sample mat-elevation-z4">
+        <h2 class="mat-h2">Example</h2>
+
+    <amf-loading-button [label]="label" [loadingLabel]="loadingLabel" [disabled]="disabled" [loading]="loading"
+        [color]="color" [spinnerColor]="spinnerColor">
+    </amf-loading-button>
+</div>

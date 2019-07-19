@@ -1,0 +1,6 @@
+<button mat-raised-button [color]="color" [disabled]="disabled || loading">
+    <span *ngIf="!loading" >{{label}} </span>
+    <span *ngIf="loading" >{{loadingLabel}}</span>
+    <mat-progress-spinner *ngIf="loading" mode="indeterminate" diameter="24" [color]="spinnerColor"></mat-progress-spinner>
+</button>
+
